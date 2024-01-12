@@ -16,7 +16,7 @@ New-Item -Path $indexHtmlPath -ItemType File
 $cssDir = Join-Path -Path $projectDir -ChildPath "css"
 $jsDir = Join-Path -Path $projectDir -ChildPath "js"
 New-Item -Path $cssDir -ItemType Directory
-New-Item -Path $jsDir -ItemType File
+New-Item -Path $jsDir -ItemType Directory
 
 # Create style.css in the css directory
 $styleCssPath = Join-Path -Path $cssDir -ChildPath "style.css"
